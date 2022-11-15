@@ -58,7 +58,7 @@ class TasksViews: XCUIApplication {
     }
     
     func getAmountOfTasks() -> Int {
-        self.cells.firstMatch.waitForElement(timeOut: 3)
+        self.logOutButton().waitForElement(timeOut: 2)
         return self.tables.cells.count - 1
     }
 

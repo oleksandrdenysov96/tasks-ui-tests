@@ -25,6 +25,7 @@ class TasksPageTest: BaseAppSuite {
             if unexpectedErrorAlert.description().waitForExistence(timeout: 3) {
                 unexpectedErrorAlert.tapRetryButton()
             }
+            tasksView.logOutButton().waitForElement(timeOut: 3)
         }
     }
     
